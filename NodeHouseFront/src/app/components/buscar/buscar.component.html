@@ -1,1 +1,37 @@
-<p>buscar works!</p>
+<section class="container my-5 form-control">
+    <form action="" class="row my-2">
+        <!--<legend class="fs-5 text-center">Busca lo necesitas encontrar</legend>-->
+        <div class="col">
+            <select class="form-select" id="tipoVivienda">
+                <option selected>Tipo de vivienda...</option>
+                <option value="Casa">Casa</option>
+                <option value="Apartamento">Apartamento</option>
+                <option value="Habitacion">Habitación</option>
+            </select>
+        </div>
+        <div class="col-auto">
+            <div class="d-flex form-control align-items-center hstack gap-3">
+                <span class="me-auto fw-light">Cocina Integral</span>
+                <label for="siCocina">SI</label>
+                <input type="radio" id="siCocina" name="fav_language" value="SIC">
+                <label for="noCocina">NO</label>
+                <input type="radio" name="" id="noCocina" name="fav_language" value="NOC">
+            </div>
+        </div>
+        <div class="col-auto">
+            <div class="d-flex form-control align-items-center hstack gap-3">
+                <span class="me-auto fw-light">Patio</span>
+                <label for="si">SI</label>
+                <input type="radio" id="si" name="fav_language" value="SI">
+                <label for="no">NO</label>
+                <input type="radio" name="" id="no" name="fav_language" value="NO">
+            </div>
+        </div>
+        <div class="col">
+            <input type="number" class="form-control" placeholder="Presupuesto $0000000">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary">BUSCAR</button>
+        </div>
+    </form>
+</section>
