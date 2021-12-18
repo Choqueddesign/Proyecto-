@@ -1,14 +1,21 @@
-const express = require("express");
-const cors = require("cors");
-
+const express = require('express');
+const cors = require('cors');
+const {connectDB} = require("./db/db");
 const app = express();
+const {inmuebles} = require("./routes/inmuebles")
+connectDB();
+
+app.use(express.json())
+app.use('/inmuebles', inmuebles);
 
 
-app.use(express.json());
+const port = 3000
 app.use(cors());
 
- const puerto  = 3030;
+// app.get('/', (req, res) => {
+//   res.send('Hello World!')
+// })
 
-app.listen(puerto,()=>{
-    console.log("Estoy escuchando en http://localhost:" + puerto);
-});
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
