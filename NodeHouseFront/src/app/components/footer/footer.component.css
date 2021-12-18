@@ -1,0 +1,13 @@
+footer{
+    background-color: #6E1B00;
+    
+}
+.btn-dark{
+    background-color: #AB4909;
+    border-color: white;
+}
+.btn-dark:hover{
+    background-color: white;
+    border-color: #AB4909;
+    color: #AB4909;
+}
