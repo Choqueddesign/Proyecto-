@@ -1,0 +1,13 @@
+.bg-nav{
+    background-color: #EB7A3A;
+}
+.btn-primary{
+    background-color: white;
+    border-color: #D4522A;
+    color: #D4522A;
+}
+.btn-primary:hover{
+    background-color: #D4522A;
+    border-color: white;
+    color: white;
+}
